@@ -101,6 +101,8 @@ export default Component.extend({
       options.autoplayDisableOnInteraction = this.get('autoplayDisableOnInteraction');
     }
     
+    options.resistanceRatio = this.get('resistanceRatio') || .00000000000001;
+
     options.touchMoveStopPropagation = this.get('touchMoveStopPropagation');
 
     options.onSlideChangeEnd = this.slideChanged.bind(this);
