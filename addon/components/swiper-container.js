@@ -101,9 +101,7 @@ export default Component.extend({
       options.autoplayDisableOnInteraction = this.get('autoplayDisableOnInteraction');
     }
     
-    if (this.get('touchMoveStopPropagation')) {
-      options.touchMoveStopPropagation = this.get('touchMoveStopPropagation');
-    }
+    options.touchMoveStopPropagation = this.get('touchMoveStopPropagation');
 
     options.onSlideChangeEnd = this.slideChanged.bind(this);
 
